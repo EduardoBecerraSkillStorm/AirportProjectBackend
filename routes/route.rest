@@ -1,0 +1,55 @@
+
+//Get all alights 
+GET http://localhost:8089/flights/
+
+###
+
+//Post a new flight
+POST http://localhost:8089/flights/
+Content-Type: application/json
+
+    {
+    "departureAirport": "JFK",
+    "arrivalAirport": "JFK",
+    "departureDate": "7/3/2022",
+    "arrivalDate": "7/3/2022",
+    "departureTime": "10:30am", 
+    "arrivalTime": "4:30pm", 
+    "passengerLimit": "3",
+    "airlineName": "SkillstormAir"
+    
+    }    
+
+### 
+
+//Get all alights 
+GET http://localhost:8089/flights/
+
+###
+
+//Get a flight
+GET http://localhost:8089/flights/62b4c6addb80ad1d22ee573b
+
+###
+
+//Delete a flight
+DELETE http://localhost:8089/flights/62bb4e98fbd3a6b0717ca00c	
+
+###
+
+//Get all alights 
+GET http://localhost:8089/flights/
+
+###
+
+//Update a flight
+Put http://localhost:8089/flights/62be00ca132a391d78237a83
+Content-Type: application/json
+
+    {
+
+    "airlineName": "SkillstormAir"
+   
+    }  
+
+
